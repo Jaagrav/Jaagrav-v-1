@@ -3,6 +3,8 @@ import React from 'react'
 import BlogsTrailer from '../components/blogs-trailer';
 
 function Blogs() {
+    document.title = "Stories by Jaagrav";
+
     const blogs = [{
         name: 'Capture Still Images on Browser using JavaScript',
         desc: 'Before we begin here is the link to what you\'ll be able to create once you read this whole article. Yes, indeed, it is possible to capture images on the browser. Well, it is true that with the power of JavaScript, we can do almost anything but on a browser.',

@@ -1,6 +1,7 @@
 import React from 'react'
 
 function About() {
+    document.title = "Who is Jaagrav?";
     React.useEffect(() => {
         document.querySelectorAll('.tabs a').forEach((e, index) => {
             if (index !== 2)

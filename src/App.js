@@ -30,17 +30,20 @@ function App(props) {
       <div className="container">
         <Router>
           <div className="tabs">
-            <Link to="/blogs" className="blogs-link open">BLOGS</Link>
+            <Link to="/stories" className="blogs-link open">STORIES</Link>
             <Link to="/projects" className="projects-link">PROJECTS</Link>
             <Link to="/about" className="about-link">ABOUT</Link>
           </div>
           <Switch>
-            <Route path="/blogs" component={Blogs} />
+            <Route path="/stories" component={Blogs} />
             <Route path="/projects" component={Projects} />
             <Route path="/about" component={About} />
             <Redirect to="/blogs" />
           </Switch>
         </Router>
+      </div>
+      <div className="footer">
+        Written by Jaagrav ©2020
       </div>
     </center>
   );
