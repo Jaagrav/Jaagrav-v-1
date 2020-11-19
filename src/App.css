@@ -1,38 +1,165 @@
-.App {
-  text-align: center;
+.container {
+    max-width: 70pc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background-container {
+    /* position: absolute; */
+    height: 30pc;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background-container .background, .background-container .background-shade{
+    position: absolute;
+    margin: auto;
+    top: 0;right: 0;left: 0;
+    z-index: -1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.background-shade {
+    height: 30pc;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(30, 35, 51, 0) 60%, #1E2333 100%);
 }
 
-.App-link {
-  color: #61dafb;
+.background {
+    height: 30pc;
+    width: 100%;
+    background: url('./components/homepagebg.jfif');
+    background-size: 100%;
+    background-position: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-container {
+    height: 20pc;
+    width: fit-content;
+    position: absolute;
+    margin: auto;
+    top: 10%;right: 0;left: 0;
+    z-index: 3 !important;
+}
+
+.profile-container * {
+    color: #fff;
+}
+
+.profile-name {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.profile-desc {
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+}
+
+.socials {
+    max-width: 45%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.socials * {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .background {
+        background-size: cover;
+    }
+    .profile-picture {
+        height: 9pc;
+        width: 9pc;
+    }
+    .profile-name {
+        font-size: 27px;
+    }
+    .profile-desc {
+        font-size: 14px;
+    }
+}
+
+.tabs {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.tabs * {
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    color: #7A9FB4;
+}
+.tabs *.open {
+    color: #fff;
+}
+
+.blog-trailer * {
+    font-family: Poppins, sans-serif;
+    text-align: left;
+}
+
+.blog-trailer {
+    height: fit-content;
+    width: calc(100% - 100px);
+    margin-bottom: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 320px 1fr;
+}
+
+.blog-trailer-thumbnail {
+    height: 320px;
+    width: 320px;
+    border-radius: 10px;
+}
+.blog-trailer-info {
+    padding: 20px 0;
+}
+.blog-trailer-date {
+    color: #6E798C;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.blog-trailer-name {
+    font-family: 'DM Serif Text', sans-serif;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.blog-trailer-desc {
+    color: #A0C6DC;
+    font-size: 14px;
+    margin-bottom: 30px;
+    max-height: 67px;
+    overflow: hidden;
+}
+.blog-trailer-link {
+    font-size: 14px;
+    color: #A0C6DC;
+}
+
+@media (max-width: 768px) {
+    .blog-trailer {
+        width: calc(100% - 50px);
+        grid-template-columns: unset;
+        grid-gap: 14px;
+        grid-template-rows: auto 1fr;
+    }
+    .blog-trailer-thumbnail {
+        height: 280px;
+        width: 100%;
+    }
+    .blog-trailer-desc {
+        max-height: fit-content;
+        overflow: visible;
+    }
+    .blog-trailer-info {
+        padding: 0;
+    }
+    .blog-trailer-name {
+        font-size: 28px;
+    }
 }
