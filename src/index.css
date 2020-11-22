@@ -2,7 +2,6 @@
 
 * {
   box-sizing: border-box;
-  text-decoration: none;
 }
 
 body {
@@ -14,9 +13,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+iframe {
+  border: none;
+  outline: none;
+  background:white;
 }
 
 body {
@@ -31,4 +31,11 @@ body * {
     background-color: transparent;
     outline: none;
     border: none;
+}
+
+.hljs-subst, .hljs-built_in, .hljs-builtin-name, .hljs-symbol, .hljs-selector-id, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-template-tag, .hljs-template-variable, .hljs-addition {
+  color: #ffa3fc;
+}
+.hljs-deletion, .hljs-number, .hljs-quote, .hljs-selector-class, .hljs-selector-id, .hljs-string, .hljs-template-tag, .hljs-type {
+  color: #58fff0;
 }

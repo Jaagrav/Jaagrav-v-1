@@ -9,7 +9,7 @@ function BlogsTrailer(props) {
                 <div className="blog-trailer-date">{props.date}</div>
                 <div className="blog-trailer-name">{props.name}</div>
                 <div className="blog-trailer-desc">{props.desc}</div>
-                <Link className="blog-trailer-link" to={props.link}>
+                <Link className="blog-trailer-link" to={"/stories" + props.link}>
                     Read more →
                 </Link>
             </div>

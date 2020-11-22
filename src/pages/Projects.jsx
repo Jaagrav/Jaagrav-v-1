@@ -3,10 +3,9 @@ import React from 'react'
 import ProjectsTrailer from '../components/projects-trailer';
 
 function Projects() {
-    document.title = "Projects by Jaagrav";
     React.useEffect(() => {
         document.querySelectorAll('.tabs a').forEach((e, index) => {
-            if (index !== 1)
+            if (index !== 0)
                 e.classList.remove('open');
             else
                 e.classList.add('open');
