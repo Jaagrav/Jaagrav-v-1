@@ -19,7 +19,7 @@ function App(props) {
             <div className="profile-container">
               <img src={pp} alt="My Fucking Face" className="profile-picture" />
               <div className="profile-name">Jaagrav Seal</div>
-              <div className="profile-desc">I am a Web Developer & UX Designer</div>
+              <div className="profile-desc">Web Developer & UX Engineer</div>
               <br />
               <div className="socials">
                 <a href="https://github.com/Jaagrav" target="_blank"><abbr title="My Github" className="fab fa-github"></abbr></a>
@@ -43,7 +43,7 @@ function App(props) {
           </div>
           <Route exact path="/stories/:storyName" component={BlogPage} />
           <div className="footer">
-            Written by Jaagrav in React ©2020
+            Written by Jaagrav
           </div>
         </center>
       </Switch>

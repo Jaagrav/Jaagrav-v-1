@@ -33,6 +33,10 @@
     background-position: center;
 }
 
+.projects, .about-page, .blogs-page, .blog-container {
+    min-height: 20pc;
+}
+
 .profile-container {
     height: 20pc;
     width: fit-content;
@@ -50,6 +54,15 @@
     font-family: 'Didact Gothic', sans-serif;
     font-size: 40px;
     letter-spacing: 3px;
+}
+
+.profile-picture {
+    cursor: none;
+    transition: ease-in-out .3s;
+}
+
+.profile-picture:hover {
+    transform: scale(2);
 }
 
 .profile-desc {
@@ -96,10 +109,11 @@
     height: fit-content;
     width: fit-content;
     color: #7A9FB4;
-    transition: .3s;
+    /* transition: .3s; */
 }
 .tabs *.open {
     color: #fff;
+    border-bottom: 2px solid #7A9FB4;
     /* font-size: 20px; */
 }
 
@@ -262,6 +276,7 @@
     width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    background: #1E2333;
 }
 
 .blog-background,.blog-container {
@@ -274,6 +289,9 @@
 
 .blog-background {
     position: fixed;
+    background-size: cover !important;
+    filter: brightness(0.5) !important;
+    background-position: center !important;
 }
 
 
@@ -283,16 +301,7 @@
     right: 0;left: 0;
     color: #fff;
     padding: 30px;
-    width: fit-content;
     max-width: 70pc;
-}
-
-.footer {
-    margin-top: 40px;
-    color: #A0C6DC;
-    background-color: #090E1E;
-    width: 100%;
-    padding: 20px;
 }
 
 .back-btn {
@@ -323,11 +332,21 @@
     font-size: 20px;
 }
 
+.blog-content a {
+    color: #9e9e9e;
+}
+
 .blog-content code {
+    background: #161820c7 !important;
+    padding: 2px 7px;
+    backdrop-filter: blur(4px);
+    border-radius: 4px;
+}
+
+.blog-content code.lang {
     display: block;
     width: 100%;
-    font-family: monospace !important;
-    background: #343a5069 !important;
+    background: #161820c7 !important;
     padding: 2px 7px;
     backdrop-filter: blur(4px);
     border-radius: 4px;
@@ -399,3 +418,40 @@
     margin-top: 40px;
     }
 }
+.about-page h1, .blogs-page h1, .projects h1{
+    color: #7A9FB4;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.about-page .socials {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    max-width: 20pc;
+}
+.about-page .socials * {
+    color: #fff;
+    font-size: 24px;
+}
+
+.about-code {
+    width: 100% !important ;
+    /* height: 1080px !important; */
+    background-color: #1E2333; 
+}
+.ace_gutter {
+    background-color: #1E2333 !important; 
+}
+.about-code * {
+    font-family: monospace !important;
+}
+
+.footer{
+    margin-top: 40px;
+    color: #A0C6DC;
+    background-color: #090E1E;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+

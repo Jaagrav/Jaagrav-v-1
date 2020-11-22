@@ -83,10 +83,13 @@ function Projects() {
         tools: ['JavaScript'],
     }]
     return (
-        <div className="projects-page">
-            {projects.map(item => (
-                <ProjectsTrailer projectname={item.projectname} projectthumbnail={item.projectthumbnail} projectdesc={item.projectdesc} github={item.github} website={item.website} tools={item.tools} />
-            ))}
+        <div className="projects">
+            <h1>Projects</h1>
+            <div className="projects-page">
+                {projects.map(item => (
+                    <ProjectsTrailer projectname={item.projectname} projectthumbnail={item.projectthumbnail} projectdesc={item.projectdesc} github={item.github} website={item.website} tools={item.tools} />
+                ))}
+            </div>
         </div>
     )
 }
