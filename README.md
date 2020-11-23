@@ -1,4 +1,4 @@
-# xJaagrav
+# Jaagrav Seal
 ##### Nice Guy, with tiny facial hair
 
 ### A bit about me
