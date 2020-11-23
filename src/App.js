@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route , Switch, Redirect, Link } from 'react-router-dom';
+import {BrowserRouter as Router, Route , Switch, Link } from 'react-router-dom';
 
 import pp from './components/pp.png';
 
@@ -19,7 +19,7 @@ function App(props) {
             <div className="profile-container">
               <img src={pp} alt="My Fucking Face" className="profile-picture" />
               <div className="profile-name">Jaagrav Seal</div>
-              <div className="profile-desc">Web Developer & UX Engineer</div>
+              <div className="profile-desc">Web Developer & UX Designer</div>
               <br />
               <div className="socials">
                 <a href="https://github.com/Jaagrav" target="_blank"><abbr title="My Github" className="fab fa-github"></abbr></a>
@@ -36,12 +36,12 @@ function App(props) {
                 <Link to="/stories" className="blogs-link open">STORIES</Link>
                 <Link to="/about" className="about-link">ABOUT</Link>
               </div>
+                <Route exact path="/" component={Blogs} />
                 <Route exact path="/stories" component={Blogs} />
                 <Route exact path="/projects" component={Projects} />
                 <Route exact path="/about" component={About} />
-                <Route exact path="/stories/:storyName" component={BlogPage} />
-                <Redirect to="/stories" />
           </div>
+          <Route exact path="/stories/:storyName" component={BlogPage} />
           <div className="footer">
             Written by Jaagrav
           </div>

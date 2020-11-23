@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { useHistory } from 'react-router-dom';
-
 import firebase from '../components/firebase'
 
 import { Link } from 'react-router-dom'
@@ -22,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 function BlogPage(props) {
     const classes = useStyles();
-    let history = useHistory();
     const [srcDoc, setSrcDoc] = React.useState('');
     const [open, setOpen] = React.useState(true);
 
@@ -31,15 +28,21 @@ function BlogPage(props) {
     React.useEffect(() => {
         let markdownString = '';
 
-        console.log(props);
+        // console.log(props);
         firebase.database().ref(`stories/${props.match.params.storyName}`).once('value').then((snap) => {
-            console.log(snap.val());
+            // console.log(snap.val());
             setOpen(false);
             setTitle(snap.val().title);
             setDate(snap.val().date);
             markdownString = snap.val().desc;
             setSrcDoc(marked(markdownString));
             setBG(snap.val().bg);
+            document.title = snap.val().title + " - Book of Jaagrav";
+            document.querySelector('meta[name="title"]').setAttribute("content", snap.val().title + " - Book of Jaagrav");
+            document.querySelector('meta[property="og:title"]').setAttribute("content", snap.val().title + " - Book of Jaagrav");
+            document.querySelector('meta[name="description"]').setAttribute("content", snap.val().previewDesc);
+            document.querySelector('meta[property="og:description"]').setAttribute("content", snap.val().previewDesc);
+            document.querySelector('meta[property="og:image"]').setAttribute("content", snap.val().bg);
         })
 
         marked.setOptions({
@@ -56,10 +59,6 @@ function BlogPage(props) {
             // sanitize: true,
         })
     }, []);
-
-    let goToBlogsPage = () => {
-        history.push('/stories')
-    }
 
     return (
         <div className="blog-page">

@@ -51,9 +51,9 @@
 }
 
 .profile-name {
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Yellowtail', sans-serif;
     font-size: 40px;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
 }
 
 .profile-picture {
@@ -68,12 +68,13 @@
 .profile-desc {
     margin-top: 10px;
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 .socials {
-    max-width: 45%;
+    max-width: 70%;
     display: grid;
+    grid-gap: 15px;
     grid-template-columns: repeat(5, 1fr);
 }
 
@@ -135,6 +136,9 @@
     height: 320px;
     width: 320px;
     border-radius: 10px;
+}
+.blog-trailer-thumbnail:hover {
+    background-size: 120%;
 }
 .blog-trailer-info {
     padding: 20px 0;
@@ -307,6 +311,7 @@
 .back-btn {
     cursor: pointer;
     color: #fff;
+    text-decoration: none;
 }
 
 .back-btn i {

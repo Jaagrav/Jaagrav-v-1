@@ -87,7 +87,7 @@ function Projects() {
             <h1>Projects</h1>
             <div className="projects-page">
                 {projects.map(item => (
-                    <ProjectsTrailer projectname={item.projectname} projectthumbnail={item.projectthumbnail} projectdesc={item.projectdesc} github={item.github} website={item.website} tools={item.tools} />
+                    <ProjectsTrailer key={item.github} projectname={item.projectname} projectthumbnail={item.projectthumbnail} projectdesc={item.projectdesc} github={item.github} website={item.website} tools={item.tools} />
                 ))}
             </div>
         </div>
