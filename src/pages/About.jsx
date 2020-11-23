@@ -6,28 +6,28 @@ import "ace-builds/src-noconflict/mode-javascript";
 import "ace-builds/src-noconflict/theme-dracula";
 
 function About() {
-    const [fontSize, setFontSize] = React.useState(24);
+  const [fontSize, setFontSize] = React.useState(24);
 
-    React.useEffect(() => {
-        document.querySelectorAll('.tabs a').forEach((e, index) => {
-            if (index !== 2)
-                e.classList.remove('open');
-            else
-                e.classList.add('open');
-        })
-        if (window.innerWidth < 768)
-            setFontSize(14);
-    }, []);
-
-    window.addEventListener('resize', e => {
-        if (window.innerWidth < 768)
-            setFontSize(14);
-        else
-            setFontSize(24)
+  React.useEffect(() => {
+    document.querySelectorAll('.tabs a').forEach((e, index) => {
+      if (index !== 2)
+        e.classList.remove('open');
+      else
+        e.classList.add('open');
     })
+    if (window.innerWidth < 768)
+      setFontSize(14);
+  }, []);
 
-    const codeText = document.createElement('textarea');
-    codeText.value = `class JaagravSeal{
+  window.addEventListener('resize', e => {
+    if (window.innerWidth < 768)
+      setFontSize(14);
+    else
+      setFontSize(24)
+  })
+
+  const codeText = document.createElement('textarea');
+  codeText.value = `class JaagravSeal{
   // I love challenges
   // I completed all the projects I planned to build in 2020
   constructor(){
@@ -62,38 +62,38 @@ function About() {
   }
 }`;
 
-    const code = codeText.value;
+  const code = codeText.value;
 
-    return (
-        <div className="about-page">
-            <h1>About Me</h1>
-            <AceEditor
-                className="about-code"
-                mode="javascript"
-                theme="dracula"
-                name="UNIQUE_ID_OF_DIV"
-                editorProps={{ $blockScrolling: true }}
-                wrapEnabled={true}
-                showGutter={false}
-                showPrintMargin={false}
-                maxLines={100}
-                fontSize={fontSize}
-                setOptions={{
-                    readOnly: true,
-                }}
-                value={code}
-            />
-            <h1>Socials</h1>
-            <div className="socials">
-                <a href="https://github.com/Jaagrav" target="_blank"><abbr title="My Github" className="fab fa-github"></abbr></a>
-                <a href="https://dev.to/jaagrav" target="_blank"><abbr title="My Dev" className="fab fa-dev"></abbr></a>
-                <a href="https://linkedin.com/in/Jaagrav" target="_blank"><abbr title="My LinkedIn" className="fab fa-linkedin"></abbr></a>
-                <a href="https://instagram.com/xJaagrav" target="_blank"><abbr title="My Instagram" className="fab fa-instagram"></abbr></a>
-                <a href="https://twitter.com/xJaagrav" target="_blank"><abbr title="My Twitter" className="fab fa-twitter"></abbr></a>
-                <a href="mailto:jaagravseal03@gmail.com" target="_blank"><abbr title="My Email Address" className="fas fa-envelope"></abbr></a>
-            </div>
-        </div>
-    )
+  return (
+    <div className="about-page">
+      <h1>About Me</h1>
+      <AceEditor
+        className="about-code"
+        mode="javascript"
+        theme="dracula"
+        name="UNIQUE_ID_OF_DIV"
+        editorProps={{ $blockScrolling: true }}
+        wrapEnabled={true}
+        showGutter={false}
+        showPrintMargin={false}
+        maxLines={100}
+        fontSize={fontSize}
+        setOptions={{
+          readOnly: true,
+        }}
+        value={code}
+      />
+      <h1>Stalk Me</h1>
+      <div className="socials">
+        <a href="https://github.com/Jaagrav" target="_blank"><abbr title="My Github" className="fab fa-github"></abbr></a>
+        <a href="https://dev.to/jaagrav" target="_blank"><abbr title="My Dev" className="fab fa-dev"></abbr></a>
+        <a href="https://linkedin.com/in/Jaagrav" target="_blank"><abbr title="My LinkedIn" className="fab fa-linkedin"></abbr></a>
+        <a href="https://instagram.com/xJaagrav" target="_blank"><abbr title="My Instagram" className="fab fa-instagram"></abbr></a>
+        <a href="https://twitter.com/xJaagrav" target="_blank"><abbr title="My Twitter" className="fab fa-twitter"></abbr></a>
+        <a href="mailto:jaagravseal03@gmail.com" target="_blank"><abbr title="My Email Address" className="fas fa-envelope"></abbr></a>
+      </div>
+    </div>
+  )
 }
 
 export default About;

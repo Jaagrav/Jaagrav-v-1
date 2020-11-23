@@ -39,9 +39,9 @@ function App(props) {
                 <Route exact path="/stories" component={Blogs} />
                 <Route exact path="/projects" component={Projects} />
                 <Route exact path="/about" component={About} />
-                {/* <Redirect to="/stories" /> */}
+                <Route exact path="/stories/:storyName" component={BlogPage} />
+                <Redirect to="/stories" />
           </div>
-          <Route exact path="/stories/:storyName" component={BlogPage} />
           <div className="footer">
             Written by Jaagrav
           </div>

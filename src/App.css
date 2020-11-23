@@ -290,7 +290,7 @@
 .blog-background {
     position: fixed;
     background-size: cover !important;
-    filter: brightness(0.5) !important;
+    filter: brightness(0.4) !important;
     background-position: center !important;
 }
 
@@ -306,6 +306,7 @@
 
 .back-btn {
     cursor: pointer;
+    color: #fff;
 }
 
 .back-btn i {
@@ -333,7 +334,8 @@
 }
 
 .blog-content a {
-    color: #9e9e9e;
+    color: #91d3ff;
+    text-decoration: underline !important;
 }
 
 .blog-content code {
@@ -341,6 +343,10 @@
     padding: 2px 7px;
     backdrop-filter: blur(4px);
     border-radius: 4px;
+}
+
+.blog-content code * {
+    font-family: monospace !important;
 }
 
 .blog-content code.lang {
@@ -361,9 +367,11 @@
     padding: 0 20px;
     backdrop-filter: blur(4px);
     background-color: rgba(255, 255, 255, 0.089);
+    font-size: 24px;
 }
 
 .blog-content img, .blog-content video, .blog-content iframe {
+    width: 100%;
     max-width: 100%;
     border-radius: 7px;
     margin: 0;
