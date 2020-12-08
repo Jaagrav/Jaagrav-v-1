@@ -29,9 +29,9 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://dev.to/jaagrav" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="jaagrav" height="30" width="40" /></a>
-<a href="https://twitter.com/xjaagrav" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="xjaagrav" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/jaagrav" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="jaagrav" height="30" width="40" /></a>
-<a href="https://instagram.com/xjaagrav" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="xjaagrav" height="30" width="40" /></a>
-<a href="https://www.youtube.com/c/thecoders" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg" alt="thecoders" height="30" width="40" /></a>
+<a href="https://dev.to/jaagrav" target="blank"><img align="center" src="https://raw.githubusercontent.com/chaitanya-raj/chaitanya-raj/master/icons/devto.png?raw=true" alt="jaagrav" height="30"  /></a>
+<a href="https://twitter.com/xjaagrav" target="blank"><img align="center" src="https://img.icons8.com/fluent/48/000000/twitter.png" alt="xjaagrav" height="30"  /></a>
+<a href="https://linkedin.com/in/jaagrav" target="blank"><img align="center" src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="jaagrav" height="30"/></a>
+<a href="https://instagram.com/xjaagrav" target="blank"><img align="center" src="https://img.icons8.com/fluent/50/000000/instagram-new.png" alt="xjaagrav" height="30" /></a>
+<a href="https://www.youtube.com/c/thecoders" target="blank"><img align="center" src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="thecoders" height="30" /></a>
 </p>
