@@ -26,7 +26,6 @@ function BlogPage(props) {
     const [title, setTitle] = React.useState(''), [date, setDate] = React.useState(''), [bg, setBG] = React.useState('');
 
     React.useEffect(() => {
-        document.title = "Book Of Jaagrav";
         let markdownString = '';
 
         // console.log(props);

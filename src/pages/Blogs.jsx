@@ -19,6 +19,8 @@ function Blogs() {
     const [open, setOpen] = React.useState(true);
 
     React.useEffect(() => {
+        document.title = "Book Of Jaagrav";
+
         document.querySelectorAll('.tabs a').forEach((e, index) => {
             if (index !== 1)
                 e.classList.remove('open');
