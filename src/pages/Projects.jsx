@@ -19,6 +19,13 @@ function Projects() {
         website: 'https://xperbycoder.netlify.app',
         tools: ['FirebaseJS', 'ReactJS', 'AceJS', 'MaterialUI'],
     }, {
+        projectname: 'CodeX',
+        projectthumbnail: 'https://camo.githubusercontent.com/3e7eda558193d190d18013a9acbcccb0f030e5747ab96c96699bc025d3997001/68747470733a2f2f6465762d746f2d75706c6f6164732e73332e616d617a6f6e6177732e636f6d2f692f3666306c37306437337366376d3772617a786d742e706e67',
+        projectdesc: 'CodeX is an online compiler for various languages like Java, C++, Python, etc. Execute code in various languages on your own website for free with the CodeX API!!!',
+        github: 'https://github.com/Jaagrav/CodeX',
+        website: 'https://codexweb.netlify.app/',
+        tools: ['ReactJS', 'AceJS', 'REST API', 'Online-Compiler'],
+    }, {
         projectname: 'Fragments',
         projectthumbnail: 'https://dev-to-uploads.s3.amazonaws.com/i/vmtimz4599ns399258gg.png',
         projectdesc: 'Fragments is a light weight code editor which supports multiple languages, store your code/snippets here for future use.',
