@@ -9,6 +9,7 @@ function About() {
   const [fontSize, setFontSize] = React.useState(24);
 
   React.useEffect(() => {
+    document.title = "About Me - Book Of Jaagrav";
     document.querySelectorAll('.tabs a').forEach((e, index) => {
       if (index !== 2)
         e.classList.remove('open');

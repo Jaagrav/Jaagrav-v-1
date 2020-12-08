@@ -4,6 +4,7 @@ import ProjectsTrailer from '../components/projects-trailer';
 
 function Projects() {
     React.useEffect(() => {
+        document.title = "Projects - Book Of Jaagrav";
         document.querySelectorAll('.tabs a').forEach((e, index) => {
             if (index !== 0)
                 e.classList.remove('open');
