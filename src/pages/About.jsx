@@ -56,7 +56,7 @@ function About() {
     ]
   }
   skills() {
-    return [ 'HTML/CSS/JS', 'JQuery' ,'ReactJS', 'Redux' , 'SASS/SCSS' , 'Material-UI/Bootstrap' , 'npm/yarn' , 'PWA' , 'GIT/GitHub CLI' , 'ElectronJS' , 'UI/UX' , 'Figma Design' , 'Firebase' , 'Web Sockets' , 'Ionic' , 'Java' , 'Android Studio' , 'Photoshop' , 'AceJS' , 'HighlightJS' , 'APIs/Frameworks' ]
+    return [ 'HTML/CSS/JS', 'JQuery' ,'ReactJS', 'Redux', 'React Native', 'SASS/SCSS' , 'Material-UI/Bootstrap' , 'npm/yarn' , 'PWA' , 'GIT/GitHub CLI' , 'ElectronJS' , 'UI/UX' , 'Figma Design' , 'Firebase' , 'Web Sockets' , 'Ionic' , 'Java' , 'Android Studio' , 'Photoshop' , 'AceJS' , 'HighlightJS' , 'APIs/Frameworks' ]
   }
   hobbies() {
     return [ 'Photography' , 'Journaling' , 'Blogging' , 'Reading Harry Potter Books' , 'Sculpting' , 'Skating' , 'Bicycling' , ];
