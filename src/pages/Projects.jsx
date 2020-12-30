@@ -14,7 +14,7 @@ function Projects() {
     }, [])
     let projects = [{
         projectname: 'Xper',
-        projectthumbnail: 'https://res.cloudinary.com/practicaldev/image/fetch/s--oS_E52pG--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/vlmrtjp4qg8nb6scdt0c.png',
+        projectthumbnail: 'https://dev-to-uploads.s3.amazonaws.com/i/ion9y9l2677xtks6thzz.png',
         projectdesc: 'Xper is a realtime code editor where you can both write and save your code in realtime!',
         github: 'https://github.com/Jaagrav/Xper',
         website: 'https://xperbycoder.netlify.app',
@@ -57,7 +57,7 @@ function Projects() {
     }, {
         projectname: '2DO',
         projectthumbnail: 'https://user-images.githubusercontent.com/52719271/97878268-6b4b2300-1d44-11eb-85a6-00700094bae6.jpg',
-        projectdesc: '2DO is a Simple Todo List Desktop app which supports basic Todo list functions like Creating/Editing/Deleting Tasks and also striking them when a specific task is done.',
+        projectdesc: '2DO is a Simple Todo List PC/Android/Web app which supports basic Todo list functions like Creating/Editing/Deleting Tasks and also striking them when a specific task is done.',
         github: 'https://github.com/Jaagrav/2DO-React-Native',
         website: 'https://2do-electron.netlify.app',
         tools: ['ElectronJS', 'LocalStorage', 'React Native', 'Drag and Drop'],
