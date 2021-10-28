@@ -30,15 +30,17 @@ function About() {
   const codeText = document.createElement('textarea');
   codeText.value = `class JaagravSeal{
   // I love challenges
-  // I completed all the projects I planned to build in 2020
+  // Currently actively contributing to opensource projects like
+  // CircuitVerse and Datenanfragen, aiming to participate in GSoC next year
   constructor(){
     this.name = "Jaagrav Seal";
-    this.age = 1065360600; //5th October 2003
+    this.age = 1065360600;
     this.email = "jaagravseal03@gmail.com"
   }
   workExperience() {
     return [
-      { 'May 2020 - Present': 'React Intern at CoronaTracker.in' },
+      { 'August 2021 - Present': 'L2 SDE Intern at CuriousJr'),
+      { 'May 2020 - May 2021': 'React Intern at CoronaTracker.in' },
       { 'November 2020 - Present': 'SWE Intern at WebDevGoa' },
       { 'August 2020 - October 2020': 'GirlScript YAY Ambassador Program' },
     ]
@@ -56,7 +58,7 @@ function About() {
     ]
   }
   skills() {
-    return [ 'HTML/CSS/JS', 'JQuery' ,'ReactJS', 'Redux', 'React Native', 'SASS/SCSS' , 'Material-UI/Bootstrap' , 'npm/yarn' , 'PWA' , 'GIT/GitHub CLI' , 'ElectronJS' , 'UI/UX' , 'Figma Design' , 'Firebase' , 'Web Sockets' , 'Ionic' , 'Java' , 'Android Studio' , 'Photoshop' , 'AceJS' , 'HighlightJS' , 'APIs/Frameworks' ]
+    return [ 'HTML/CSS/JS', 'JQuery' ,'ReactJS', 'Redux', 'React Native', 'SASS/SCSS' , 'Material-UI/Bootstrap' , 'npm/yarn' , 'PWA' , 'GIT/GitHub CLI' , 'ElectronJS' , 'UI/UX' , 'Figma Design' , 'Firebase' , 'Web Sockets' , 'Ionic' , 'Java' , 'Android Studio' , 'Photoshop' , 'AceJS' , 'HighlightJS' , 'APIs/Frameworks', 'Blockly' ]
   }
   hobbies() {
     return [ 'Photography' , 'Journaling' , 'Blogging' , 'Reading Harry Potter Books' , 'Sculpting' , 'Skating' , 'Bicycling' , ];
